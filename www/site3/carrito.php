@@ -14,9 +14,14 @@
         foreach( $productos as $prod => $pre){
             echo "<tr>";
             echo "<td>" . $prod . "</td>";
-            echo "<td>" . $pre . "</td>";
+            echo "<td>" . $pre . "€</td>";
             echo "</tr>";
+            $total= $total+$pre;
         }
+        echo "<tr>";
+        echo "<td>TOTAL: </td>";
+        echo "<td>".$total."€</td>";
+        echo "</tr>";
         echo "</table>";
     ?>
 </body>
